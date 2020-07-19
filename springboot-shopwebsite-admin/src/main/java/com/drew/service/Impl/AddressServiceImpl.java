@@ -39,6 +39,10 @@ public class AddressServiceImpl implements AddressService{
 		return addressDao.findAllList();
 	}
 
+	@Override
+	public Address findByUserId(int id){
+		return addressDao.findByUserId(id);
+	}
 
-    ;
+    
 }

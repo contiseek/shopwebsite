@@ -1,85 +1,68 @@
-/*购物车*/
-/*窗口*/
-.buyCarBox{
-	width: 600px;
-	height: 500px;
-	background-color: #ffffff;
-	margin: 0px auto;
-	
-}
-.buyCarBoxTitleBox{
-	width: 600px;
-	height: 50px;
-	background-color: #008080;
-	/*定义父元素里的的元素居中以下*/
-	display: flex;
-	align-items: center; /*定义父元素里的的元素垂直居中*/
-	/*justify-content: center; 定义父元素的里的元素水平居中*/
-}
-.buyCarBoxTitleNameBox{
-	background-color: #0055ff;
-	color: #FFFFFF;
-	width: 350px;
-	height: 24px;
-	font-size: 20px;
-	text-align: center;
-}
-.buyCarBoxTitleButtonBox{
-	background-color: #55aa7f;
-	color: #FFFFFF;
-	width: 250px;
-	height: 24 px;
-	font-size: 20px;
-	text-align: center;
-}
-.buyCarBoxTitleButton{
-	background-color: #55aa7f;
-	color: #FFFFFF;
-	width: 100px;
-	height: 24 px;
-	font-size: 14px;
-	text-align: center;
-}
-
-
 /*注册登录弹窗隐藏*/
 #userRegistBox {
 	display: none;
 }
-#userLoginBox{
+
+#userLoginBox {
 	display: none;
 }
-/*
-#userBuyCarBox{
+
+/*购物车*/
+#buyCarBoxId {
 	display: none;
-}*/
+}
+/*订单*/
+#ordersBoxId{
+	display: none;
+}
+/*地址*/
+#addressBoxId{
+	display: none;
+}
+#userInfoBoxId{
+	display: none;
+}
+
+	
+	/*购买*/
+	.buyPage{
+	width: 500px;
+	height: 500px;
+	background-color: #ffffff;
+	margin: 0px auto;
+
+	}
+	
+	
 /*首页顶部*/
-.indexHead{
+.indexHead {
 	width: 1000px;
 	height: 50px;
 	background-color: #001f1f;
 	/*设置flex后float不起作用了*/
 	margin: 0px auto;
-	display: flex; 
+	display: flex;
 	/*justify-content: center;
 	除了space-between还有其它类型,收藏夹*/
 }
+
 /*首页中部*/
-.indexMain{
+.indexMain {
 	width: 1000px;
-	height: 900px;
+	height: 1150px;
 	background-color: #f8f8f8;
 	/*设置flex后float不起作用了*/
-	
+
 	margin: 0px auto;
 	/*justify-content: center;
 	除了space-between还有其它类型,收藏夹*/
 }
+
 /*首页底部*/
-.indexFoot{
+.indexFoot {
 	width: 1000px;
 	height: 60px;
-	/*要设为float：left；下方的footlink中的margin才起作用。*/
+	/*要设为float：left；下方的footWord中的margin才起作用。*/
 	float: left;
 	background-color: #001f1f;
 	/*水平居中*/
@@ -87,26 +70,29 @@
 	left: 50%;
 	margin-left: -500px;
 }
+
 /*底部文字框*/
-.footWord{
+.footWord {
 	/*添加链接时要增加此处width，四个字100px  Copyright © 2020 泡面网 All Rights Reserved*/
 	width: 460px;
 	height: 20px;
 	/*上下居中*/
-	margin:5px auto;
+	margin: 18px auto;
 	/*background-color: #09950e;*/
 	color: #cccccc;
 	font-size: 15px;
-	
+
 }
 
 /*欢迎链接*/
-.welcomelink{
+.welcomelink {
 	color: #cccccc;
 }
+
 .welcomelink:link {
-text-decoration: none;
+	text-decoration: none;
 }
+
 /*
 a:visited {
 color:#00FF00;
@@ -118,13 +104,14 @@ color:#000000;
 text-decoration:none;
 }*/
 .welcomelink:active {
-color:#ffffff;
-text-decoration:none;
-} 
+	color: #ffffff;
+	text-decoration: none;
+}
+
 /*头部欢迎盒子*/
-.headWelcome{
+.headWelcome {
 	width: auto;
-	height: 30px;	
+	height: 30px;
 	/*上下居中*/
 	margin: 14px auto;
 	padding: 0px 4px 0px 4px;
@@ -134,71 +121,590 @@ text-decoration:none;
 	padding: px;
 	text-align: center;
 }
+
 /*头部搜索盒子*/
-.headSearch{
+.headSearch {
 	width: 350px;
 	height: 50px;
-	
+
 	/*background-color: #c478ce;*/
 }
+
 /*搜索框*/
-.serchInput{
+.serchInput {
 	width: 200px;
-	height: 25px;	
+	height: 25px;
 	color: #cccccc;
 	margin: 10px 2px 0px 2px;
 	border-color: rgba(255, 255, 255, 0.945);
-	background-color: rgba(255, 255, 255, 0);;
+	background-color: rgba(255, 255, 255, 0);
+	;
 	padding-left: 10px;
 	font-size: 15px;
 }
+
 /*搜索按钮盒子*/
-.serchButtonBox{
+.serchButtonBox {
 	width: 300px;
 	height: 50px;
 	/*
 	background-color: #00aaff;*/
 }
-	
-	/*注册登录按钮在的盒子*/
-	.loginButtonBox{
-			width: 280px;
-			height: 50px;
-			/*background-color: #ffff7f;*/
-	}
+
+/*注册登录按钮在的盒子*/
+.loginButtonBox {
+	width: 280px;
+	height: 50px;
+	/*background-color: #ffff7f;*/
+}
+
 /*首页注册登录按钮*/
-.buttonRegist{
-	border-radius: 5px;/*圆角*/
+.buttonRegist {
+	border-radius: 5px;
+	/*圆角*/
 	width: 60px;
 	height: 30px;
 	background-color: #002323;
 	color: #cccccc;
-	margin: 10px 8px 2px 0px;/*外边距：上，右，下，左*/
+	margin: 10px 8px 2px 0px;
+	/*外边距：上，右，下，左*/
 	font-size: 12px;
 }
+
 /*登录按钮悬浮*/
-.buttonRegist:hover{
+.buttonRegist:hover {
 	color: #cccccc;
 	background-color: #616161;
 	color: rgb(224, 224, 224);
 }
+
 /*购物车*/
-.buyCarButton{
-	border-radius: 5px;/*圆角*/
+.buyCarButton {
+	border-radius: 5px;
+	/*圆角*/
 	width: 70px;
 	height: 30px;
 	background-color: #002323;
 	color: #cccccc;
-	margin: 10px 15px 2px 5px;/*外边距：上，右，下，左*/
+	margin: 10px 15px 2px 5px;
+	/*外边距：上，右，下，左*/
 	font-size: 12px;
 }
-.buyCarButton:hover{
+
+.buyCarButton:hover {
+	color: #cccccc;
+	background-color: #616161;
+	color: rgb(224, 224, 224);
+}
+/*轮播图*/
+.indexLunboPicBox{
+	width: 605px;
+	height: 405px;
+	float: left;
+	/*background-color: #74ca65;*/
+	margin: 5px 0px 0px 5px;
+}
+/*搜索结果*/
+.indexSearchBox{
+	float: right;
+	width: 390px;
+	height: 405px;
+	/*background-color: #789dca;*/
+	margin: 5px 0px 0px 0px;
+}
+/*搜索结果小格子*/
+.goodsSearchLittleBox{
+	float: right;
+	width: 120px;
+	height: 120px;
+	margin: 11px 8px 1px 0px;
+	/*background-color: #ca557e;*/
+}
+/*搜索结果小格子图片*/
+.goodsSearchPic{
+	width: 120px;
+	height: 120px;
+}
+/*商品展示*/
+.indexAllGoodsBox{
+	float: right;
+	width: 1000px;
+	height: 480px;
+	/*background-color: #ca8a65;*/
+	margin: 5px 0px 0px 0px;
+}
+.goodsShowBox{
+	float: right;
+	width: 230px;
+	height: 230px;
+	/*background-color: #61b2ca;*/
+	margin: 10px 10px 0px 10px;
+}
+.imageGoods{
+	width: 230px;
+	height: 230px;
+}
+/*下拉菜单*/
+/*下拉菜单*/
+
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	right: 0;
+	background-color: #f9f9f9;
+	min-width: 80px;
+	min-height: 150px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content button {
+	border-radius: 5px;
+	/*圆角*/
+	width: 70px;
+	height: 30px;
+	background-color: #002323;
+	color: #cccccc;
+	margin: 5px 5px 0px 5px;
+	/*外边距：上，右，下，左*/
+	font-size: 12px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content button:hover {
 	color: #cccccc;
 	background-color: #616161;
 	color: rgb(224, 224, 224);
 }
 
+.dropdown:hover .dropdown-content {
+	display: block;
+}
 
+.dropdown:hover .dropbtn {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*
+<div id="addressBoxId" class="addressBox">
+				<div id="" class="addressBoxTitleBox">
+					<div class="addressBoxTitleNameBox">
+						<p>XXX的地址</p>
+					</div>
+					<div class="addressBoxTitleButtonBox">
+						<button class="addressBoxTitleButton">添加地址</button>
+					</div>
+				</div>
+				<div class="addressBoxTableBox">
+					<table id="addressTable" class="hovertable">ordersTableButton*/
+/*地址*/
+.addressBox{
+	width: 700px;
+	height: 150px;
+	background-color: #ffffff;
+	margin: 0px auto;
+}
+.addressBoxTitleBox{
+	width: 700px;
+	height: 50px;
+	background-color: #008080;
+	/*定义父元素里的的元素居中以下*/
+	display: flex;
+	align-items: center;
+	/*定义父元素里的的元素垂直居中*/
+	/*justify-content: center; 定义父元素的里的元素水平居中*/
+}
+.addressBoxTitleNameBox{
+	/*background-color: #268038;*/
+	color: #ececec;
+	width: 500px;
+	/*下面两项文字垂直居中，相加为50px*/
+	height: 39px;
+	padding-top: 11px;
+	font-size: 20px;
+	text-align: center;
+}
+.addressBoxTitleButtonBox{
+	/*background-color: #aa759e;*/
+	color: #FFFFFF;
+	width: 250px;
+	/*下面两项按钮垂直居中，相加为50px*/
+	height: 41px;
+	padding-top: 9px;
+	font-size: 20px;
+	text-align: center;
+	margin-left: 80px;
+}
+.addressBoxTitleButton{
+	background-color: rgba(255, 255, 255, 0);
+	color: #ececec;
+	width: 100px;
+	height: 35px;
+	font-size: 14px;
+	margin: 0px 0px 0px 7px;
+	text-align: center;
+}
+.addressBoxTitleButton:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #FFFFFF;
+}
+/*.addressBoxTableBox{*/
+	/*background-color: #55ff7f;*/
+	/*width: 700px;
+	height: auto;
+	min-height: 200px;
+	float: left;
+}*/
+.addressTableButton{
+	background-color: rgba(255, 255, 255, 0.6);
+	color: #000000;
+	width: 40px;
+	height: 24 px;
+	font-size: 14px;
+	margin: 0px 0px 0px 1px;
+	text-align: center;
+}
+.addressTableButton {
+	background-color: rgba(255, 255, 255, 0.6);
+	color: #000000;
+	width: 40px;
+	height: 24 px;
+	font-size: 14px;
+	margin: 0px 0px 0px 1px;
+	text-align: center;
+}
+
+.addressTableButton:hover {
+	background-color: rgba(255, 255, 255, 0);
+	color: #000000;
+
+}
+
+
+
+
+
+
+/*<div id="userInfoBoxId" class="userInfoBox">
+				<div id="" class="userInfoBoxTitleBox">
+					<div class="userInfoBoxTitleNameBox">
+						<p>XXX的地址</p>
+					</div>
+					<div class="userInfoBoxTitleButtonBox">
+						<button class="userInfoBoxTitleButton">添加地址</button>
+					</div>
+				</div>
+				<div class="userInfoBoxTableBox">
+					<table id="userInfoTable" class="hovertable">userInfoTableButton
+		
+						<tr>*/
+/*个人信息*/
+.userInfoBox{
+	width: 700px;
+	height: 150px;
+	background-color: #ffffff;
+	margin: 0px auto;
+}
+.userInfoBoxTitleBox{
+	width: 700px;
+	height: 50px;
+	background-color: #008080;
+	/*定义父元素里的的元素居中以下*/
+	display: flex;
+	align-items: center;
+	/*定义父元素里的的元素垂直居中*/
+	/*justify-content: center; 定义父元素的里的元素水平居中*/
+}
+.userInfoBoxTitleNameBox{
+	/*background-color: #268038;*/
+	color: #ececec;
+	width: 500px;
+	/*下面两项文字垂直居中，相加为50px*/
+	height: 39px;
+	padding-top: 11px;
+	font-size: 20px;
+	text-align: center;
+}
+.userInfoBoxTitleButtonBox{
+	/*background-color: #aa759e;*/
+	color: #FFFFFF;
+	width: 250px;
+	/*下面两项按钮垂直居中，相加为50px*/
+	height: 41px;
+	padding-top: 9px;
+	font-size: 20px;
+	text-align: center;
+	margin-left: 80px;
+}
+.userInfoBoxTitleButton{
+	background-color: rgba(255, 255, 255, 0);
+	color: #ececec;
+	width: 100px;
+	height: 35px;
+	font-size: 14px;
+	margin: 0px 0px 0px 7px;
+	text-align: center;
+}
+.userInfoBoxTitleButton:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #FFFFFF;
+}
+/*.userInfoBoxTableBox{
+	background-color: #55ff7f;*/
+	/*width: 700px;
+	height: auto;
+	min-height: 200px;
+	float: left;
+}*/
+.userInfoTableButton{
+	background-color: rgba(255, 255, 255, 0.6);
+	color: #000000;
+	width: 40px;
+	height: 24 px;
+	font-size: 14px;
+	margin: 0px 0px 0px 1px;
+	text-align: center;
+}
+.userInfoTableButton {
+	background-color: rgba(255, 255, 255, 0.6);
+	color: #000000;
+	width: 90px;
+	height: 24 px;
+	font-size: 14px;
+	margin: 0px 0px 0px 1px;
+	text-align: center;
+}
+
+.userInfoTableButton:hover {
+	background-color: rgba(255, 255, 255, 0);
+	color: #000000;
+}
+
+/*订单*//*窗口*/
+.ordersBox{
+	width: 800px;
+	height: 400px;
+	background-color: #ffffff;
+	margin: 0px auto;
+}
+.ordersBoxTitleBox{
+	width: 800px;
+	height: 50px;
+	background-color: #008080;
+	/*定义父元素里的的元素居中以下*/
+	display: flex;
+	align-items: center;
+	/*定义父元素里的的元素垂直居中*/
+	/*justify-content: center; 定义父元素的里的元素水平居中*/
+}
+.ordersBoxTitleNameBox{
+	/*background-color: #268038;*/
+	color: #ececec;
+	width: 500px;
+	/*下面两项文字垂直居中，相加为50px*/
+	height: 39px;
+	padding-top: 11px;
+	font-size: 20px;
+	text-align: center;
+}
+.ordersBoxTitleButtonBox{
+	/*background-color: #aa759e;*/
+	color: #FFFFFF;
+	width: 250px;
+	/*下面两项按钮垂直居中，相加为50px*/
+	height: 41px;
+	padding-top: 9px;
+	font-size: 20px;
+	text-align: center;
+	margin-left: 80px;
+}
+.ordersBoxTitleButton{
+	background-color: rgba(255, 255, 255, 0);
+	color: #ececec;
+	width: 100px;
+	height: 35px;
+	font-size: 14px;
+	margin: 0px 0px 0px 7px;
+	text-align: center;
+}
+.ordersBoxTitleButton:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #FFFFFF;
+}
+.ordersBoxTableBox{
+	/*background-color: #55ff7f;*/
+	width: 800px;
+	height: auto;
+	min-height: 200px;
+	float: left;
+}
+.ordersTableButton{
+	background-color: rgba(255, 255, 255, 0.6);
+	color: #000000;
+	width: 40px;
+	height: 24 px;
+	font-size: 14px;
+	margin: 0px 0px 0px 1px;
+	text-align: center;
+}
+.ordersTableButton {
+	background-color: rgba(255, 255, 255, 0.6);
+	color: #000000;
+	width: 40px;
+	height: 24 px;
+	font-size: 14px;
+	margin: 0px 0px 0px 1px;
+	text-align: center;
+}
+
+.ordersTableButton:hover {
+	background-color: rgba(255, 255, 255, 0);
+	color: #000000;
+}
+/*购物车*/
+/*窗口*/
+.buyCarBox {
+	width: 700px;
+	height: 500px;
+	background-color: #ffffff;
+	margin: 0px auto;
+
+}
+
+.buyCarBoxTitleBox {
+	width: 700px;
+	height: 50px;
+	background-color: #008080;
+	/*定义父元素里的的元素居中以下*/
+	display: flex;
+	align-items: center;
+	/*定义父元素里的的元素垂直居中*/
+	/*justify-content: center; 定义父元素的里的元素水平居中*/
+}
+
+.buyCarBoxTitleNameBox {
+	/*background-color: #268038;*/
+	color: #ececec;
+	width: 350px;
+	/*下面两项文字垂直居中，相加为50px*/
+	height: 39px;
+	padding-top: 11px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.buyCarBoxTitleButtonBox {
+	/*background-color: #aa759e;*/
+	color: #FFFFFF;
+	width: 250px;
+	/*下面两项按钮垂直居中，相加为50px*/
+	height: 41px;
+	padding-top: 9px;
+	font-size: 20px;
+	text-align: center;
+	margin-left: 90px;
+}
+
+.buyCarBoxTitleButton {
+	background-color: rgba(255, 255, 255, 0);
+	color: #ececec;
+	width: 100px;
+	height: 35px;
+	font-size: 14px;
+	margin: 0px 0px 0px 7px;
+	text-align: center;
+}
+
+.buyCarBoxTitleButton:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #FFFFFF;
+}
+
+.buyCarTableButton {
+	background-color: rgba(255, 255, 255, 0.6);
+	color: #000000;
+	width: 40px;
+	height: 24 px;
+	font-size: 14px;
+	margin: 0px 0px 0px 1px;
+	text-align: center;
+}
+
+.buyCarTableButton:hover {
+	background-color: rgba(255, 255, 255, 0);
+	color: #000000;
+}
+
+.buyCarTableBox {
+	background-color: #ffffff;
+	width: 700px;
+	height: auto;
+	min-height: 170px;
+	float: left;
+}
+
+/*购物车表格css下*/
+table.hovertable {
+	font-family: verdana, arial, sans-serif;
+	width: 700px;
+	text-align: center;
+	/* 只有定义了表格的布局算法为fixed，下面td的定义才能起作用。 */
+	table-layout: fixed;
+	/*表格整体宽度*/
+	font-size: 11px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #6b6b6b;
+	border-collapse: collapse;
+	/*单个表格的布局为无间距*/
+}
+
+table.hovertable th {
+	/*超出部分隐藏*/
+	overflow: hidden;
+	/* 强制在同一行内显示所有文本，直到文本结束或者遭遇 br 对象。不换行 */
+	word-break: keep-all;
+	/* 内容超出宽度时隐藏超出部分的内容 */
+	white-space: nowrap;
+	/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+	text-overflow: ellipsis;
+	/**/
+	background-color: #afd8e0;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #67797a;
+}
+
+table.hovertable tr {
+	/*表格整体宽度*/
+	background-color: #d4e3e5;
+}
+
+table.hovertable td {
+	/*超出部分隐藏*/
+	overflow: hidden;
+	/* 强制在同一行内显示所有文本，直到文本结束或者遭遇 br 对象。不换行 */
+	word-break: keep-all;
+	/* 内容超出宽度时隐藏超出部分的内容 */
+	white-space: nowrap;
+	/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+	text-overflow: ellipsis;
+	border-width: 1px;
+	/*表格边框*/
+	padding: 3px 2px 2px 3px;
+	/*内边距*/
+	border-style: solid;
+	/*表格边框*/
+	border-color: #67797a;
+	/*表格边框*/
+}
 
 
 
@@ -207,19 +713,19 @@ text-decoration:none;
 
 /*用户登录*/
 /*用户注册*/
-.loginBoxUI{
+.loginBoxUI {
 	background-color: rgb(255, 255, 255);
 	width: 350px;
-	height: 280px;
-	margin: 10px auto;
+	height: 260px;
+	margin: 0px auto;
 	font-display: ;
 	/*外边距,水平居中*/
 }
 
 /*登录注册上方*/
-.loginBoxUp{
-	min-width: 350px;
-	min-height: 45px;
+.loginBoxUp {
+	width: 350px;
+	height: 45px;
 	background-color: teal;
 	float: left;
 	/*浮动，盒子间关系*/
@@ -233,17 +739,21 @@ text-decoration:none;
 	font-size: 15px;
 	/*字体大小*/
 }
+
 /*弹窗点击登录按钮*/
-.work-button-login{
-	border-radius: 5px;/*圆角*/
+.work-button-login {
+	border-radius: 5px;
+	/*圆角*/
 	width: 80px;
 	height: 30px;
 	background-color: #006666;
 	color: #cccccc;
-	margin: 8px 7px 2px 5px;/*外边距：上，右，下，左*/
+	margin: 8px 7px 2px 5px;
+	/*外边距：上，右，下，左*/
 	font-size: 12px;
 }
-.work-button-login:hover{
+
+.work-button-login:hover {
 	color: #cccccc;
 	background-color: #007d7d;
 	color: rgb(224, 224, 224);
@@ -253,21 +763,27 @@ text-decoration:none;
 #icon-ui {
 	/*此处定义的font-size不起作用
     font-size: 30px;*/
-    color:#526664;
-    /*background-color: khaki;*/
-    width: 30px;
-    height: 40px;
-    float:left;/*浮动，盒子间关系，*/
-    margin: 5px 3px 0px 5px;/*外边距：上，右，下，左*/
+	color: #526664;
+	/*background-color: khaki;*/
+	width: 30px;
+	height: 40px;
+	float: left;
+	/*浮动，盒子间关系，*/
+	margin: 5px 3px 0px 5px;
+	/*外边距：上，右，下，左*/
 }
+
 /*输入框盒子*/
-.loginInputBox{
+.loginInputBox {
 	width: 320px;
-	 height: 52px;
+	height: 52px;
 	/*background-color: rgb(118, 194, 194);*/
-	 float: left;/*浮动，盒子间关系，不加会被上方的loginUpBox覆盖掉*/
-	 margin: 4px 0px 0px 16px;/*外边距：上，右，下，左*/
+	float: left;
+	/*浮动，盒子间关系，不加会被上方的loginUpBox覆盖掉*/
+	margin: 4px 0px 0px 16px;
+	/*外边距：上，右，下，左*/
 }
+
 /*输入框*/
 .ui-input-long {
 	width: 240px;
@@ -280,13 +796,17 @@ text-decoration:none;
 	margin: 2px 2px 0px 5px;
 	/*外边距：上，右，下，左*/
 }
+
 /*验证码盒子*/
-.checkCodeBox{
-    width: 120px;
-    height: 52px;
-    float:left;/*浮动，盒子间关系，*/
-    margin: 11px 0px 0px 10px;/*外边距：上，右，下，左*/
+.checkCodeBox {
+	width: 120px;
+	height: 52px;
+	float: left;
+	/*浮动，盒子间关系，*/
+	margin: 11px 0px 0px 10px;
+	/*外边距：上，右，下，左*/
 }
+
 /*提交按钮*/
 .work-button-post {
 	border-radius: 5px;

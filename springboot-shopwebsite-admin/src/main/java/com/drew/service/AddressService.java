@@ -15,4 +15,6 @@ public interface AddressService {
     Address findById(int id);
 
     List<Address> findAllList();
+
+    Address findByUserId(int id);
 }

@@ -1,5 +1,6 @@
 package com.drew.dao.Impl;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -35,7 +36,8 @@ public class UserDaoImpl implements UserDao{
     public int delete(int id) {
         return jdbcTemplate.update("DELETE from user where userid=?",id);
     }
-
+    
+    
     @Override
     public User findById(int id) {
         List<User> list = jdbcTemplate.query("select * from user where userid=?", new Object[]{id}, new BeanPropertyRowMapper<User>(User.class));
@@ -46,7 +48,18 @@ public class UserDaoImpl implements UserDao{
              return null;
         }
     }
-
+    
+    @Override
+    public User findByName(String name) {
+        List<User> list = jdbcTemplate.query("select * from user where username=?", new Object[]{name}, new BeanPropertyRowMapper<User>(User.class));
+        if(list!=null && list.size()>0){
+            User user = list.get(0);
+            return user;
+        }else{
+             return null;
+        }
+    }
+    
     @Override
     public List<User> findAllList() {
         List<User> list = jdbcTemplate.query("select * from user", new Object[]{}, new BeanPropertyRowMapper<User>(User.class));

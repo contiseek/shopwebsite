@@ -11,10 +11,7 @@ import com.drew.model.Address;
 import java.util.List;
 import java.util.Map;
 
-/**
-* address
-* @author 大狼狗 2020-07-06
-*/
+
 @Repository
 public class AddressDaoImpl implements AddressDao{
 
@@ -58,6 +55,18 @@ public class AddressDaoImpl implements AddressDao{
             return list;
         }else{
             return null;
+        }
+    }
+
+
+    @Override
+    public Address findByUserId(int id) {
+        List<Address> list = jdbcTemplate.query("select * from address where userid=?", new Object[]{id}, new BeanPropertyRowMapper<Address>(Address.class));
+        if(list!=null && list.size()>0){
+            Address address = list.get(0);
+            return address;
+        }else{
+             return null;
         }
     }
 

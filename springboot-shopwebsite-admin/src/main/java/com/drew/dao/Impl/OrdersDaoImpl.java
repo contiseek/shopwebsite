@@ -9,6 +9,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.drew.dao.OrdersDao;
+import com.drew.model.BuyShopping;
 import com.drew.model.Orders;
 
 @Repository
@@ -56,5 +57,15 @@ public class OrdersDaoImpl implements OrdersDao{
             return null;
         }
     }
-
+    
+    @Override
+    public List<Orders> findAllListById(int id) {
+        List<Orders> list = jdbcTemplate.query("select * from orders where userid=?", new Object[]{id},
+        		new BeanPropertyRowMapper<Orders>(Orders.class));
+        if(list!=null && list.size()>0){
+            return list;
+        }else{
+            return null;
+        }
+    }
 }

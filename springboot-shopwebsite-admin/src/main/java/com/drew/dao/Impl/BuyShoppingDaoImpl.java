@@ -11,10 +11,7 @@ import com.drew.model.BuyShopping;
 import java.util.List;
 import java.util.Map;
 
-/**
-* buyshopping
-* @author 大狼狗 2020-07-06
-*/
+
 @Repository
 public class BuyShoppingDaoImpl implements BuyShoppingDao{
 
@@ -62,5 +59,15 @@ public class BuyShoppingDaoImpl implements BuyShoppingDao{
             return null;
         }
     }
-
+    
+    @Override
+    public List<BuyShopping> findAllListById(int id) {
+        List<BuyShopping> list = jdbcTemplate.query("select * from buyshopping where userid=?", new Object[]{id},
+        		new BeanPropertyRowMapper<BuyShopping>(BuyShopping.class));
+        if(list!=null && list.size()>0){
+            return list;
+        }else{
+            return null;
+        }
+    }
 }

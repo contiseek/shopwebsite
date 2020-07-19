@@ -17,5 +17,7 @@ public interface BuyShoppingDao {
     BuyShopping findById(int id);
 
     List<BuyShopping> findAllList();
+    
+    List<BuyShopping> findAllListById(int id);
 
 }

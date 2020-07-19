@@ -38,4 +38,9 @@ public class OrdersServiceImpl implements OrdersService {
 	public List<Orders> findAllList(){
     	return ordersDao.findAllList();
     }
+    //List<Orders> findAllListById(int id)
+    @Override
+	public List<Orders> findAllListById(int id){
+    	return ordersDao.findAllListById(id);
+    }
 }

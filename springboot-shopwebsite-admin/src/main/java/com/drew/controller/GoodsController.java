@@ -84,10 +84,6 @@ public class GoodsController {
 		newgoods.setPrice(price);
 		newgoods.setPicture(picture);
 		newgoods.setGoodsnumber(Integer.parseInt(goodsnumber));
-		//System.out.println("String.valueOf(newgoods): "+String.valueOf(newgoods));
-		
-		//System.out.println("newgoods.getGoodsid()： "+newgoods.getGoodsid());
-		//System.out.println("newgoods.getGoodsname()： "+newgoods.getGoodsname());
 		//map用来返回前端结果
 		Map<String,Object> map = new HashMap<>();
 		//防止重复插入数据库，注意是查到为空表示可以插入数据

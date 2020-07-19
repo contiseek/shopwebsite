@@ -41,4 +41,9 @@ public class BuyShoppingServiceImpl implements BuyShoppingService{
 	public List<BuyShopping> findAllList(){
     	return buyShoppingDao.findAllList();
     }
+    //List<BuyShopping> findAllListById(int id);
+    @Override
+	public List<BuyShopping> findAllListById(int id){
+    	return buyShoppingDao.findAllListById(id);
+    }
 }

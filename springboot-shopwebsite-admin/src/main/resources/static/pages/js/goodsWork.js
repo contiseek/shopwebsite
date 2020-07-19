@@ -5,15 +5,12 @@ function ordersWork() {
 }
 //打开添加商品弹窗
 function goodsAdd() {
-	//layer.msg('这是最常用的吧');
-	//js打开新窗口window.open ("login.html")
 	layer.open({
 		type: 1,
 		title: "",
 		area: ["600px", "270px"],
 		content: $("#addgoodsBox"),
 	});
-	//alert("弹出");
 }
 //库存管理窗口打开
 function roomUpdate() {
@@ -424,3 +421,7 @@ function deleteGoods(event) {
 		});
 
 }
+
+
+
+

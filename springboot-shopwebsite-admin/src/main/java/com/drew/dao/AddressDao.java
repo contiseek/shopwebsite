@@ -15,4 +15,6 @@ public interface AddressDao {
     Address findById(int id);
 
     List<Address> findAllList();
+    //findByUserId()
+    Address findByUserId(int id);
 }
