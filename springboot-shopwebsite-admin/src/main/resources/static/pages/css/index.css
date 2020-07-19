@@ -1,0 +1,308 @@
+/*购物车*/
+/*窗口*/
+.buyCarBox{
+	width: 600px;
+	height: 500px;
+	background-color: #ffffff;
+	margin: 0px auto;
+	
+}
+.buyCarBoxTitleBox{
+	width: 600px;
+	height: 50px;
+	background-color: #008080;
+	/*定义父元素里的的元素居中以下*/
+	display: flex;
+	align-items: center; /*定义父元素里的的元素垂直居中*/
+	/*justify-content: center; 定义父元素的里的元素水平居中*/
+}
+.buyCarBoxTitleNameBox{
+	background-color: #0055ff;
+	color: #FFFFFF;
+	width: 350px;
+	height: 24px;
+	font-size: 20px;
+	text-align: center;
+}
+.buyCarBoxTitleButtonBox{
+	background-color: #55aa7f;
+	color: #FFFFFF;
+	width: 250px;
+	height: 24 px;
+	font-size: 20px;
+	text-align: center;
+}
+.buyCarBoxTitleButton{
+	background-color: #55aa7f;
+	color: #FFFFFF;
+	width: 100px;
+	height: 24 px;
+	font-size: 14px;
+	text-align: center;
+}
+
+
+/*注册登录弹窗隐藏*/
+#userRegistBox {
+	display: none;
+}
+#userLoginBox{
+	display: none;
+}
+/*
+#userBuyCarBox{
+	display: none;
+}*/
+/*首页顶部*/
+.indexHead{
+	width: 1000px;
+	height: 50px;
+	background-color: #001f1f;
+	/*设置flex后float不起作用了*/
+	margin: 0px auto;
+	display: flex; 
+	/*justify-content: center;
+	除了space-between还有其它类型,收藏夹*/
+}
+/*首页中部*/
+.indexMain{
+	width: 1000px;
+	height: 900px;
+	background-color: #f8f8f8;
+	/*设置flex后float不起作用了*/
+	
+	margin: 0px auto;
+	/*justify-content: center;
+	除了space-between还有其它类型,收藏夹*/
+}
+/*首页底部*/
+.indexFoot{
+	width: 1000px;
+	height: 60px;
+	/*要设为float：left；下方的footlink中的margin才起作用。*/
+	float: left;
+	background-color: #001f1f;
+	/*水平居中*/
+	position: absolute;
+	left: 50%;
+	margin-left: -500px;
+}
+/*底部文字框*/
+.footWord{
+	/*添加链接时要增加此处width，四个字100px  Copyright © 2020 泡面网 All Rights Reserved*/
+	width: 460px;
+	height: 20px;
+	/*上下居中*/
+	margin:5px auto;
+	/*background-color: #09950e;*/
+	color: #cccccc;
+	font-size: 15px;
+	
+}
+
+/*欢迎链接*/
+.welcomelink{
+	color: #cccccc;
+}
+.welcomelink:link {
+text-decoration: none;
+}
+/*
+a:visited {
+color:#00FF00;
+text-decoration:none;
+}
+
+a:hover {
+color:#000000;
+text-decoration:none;
+}*/
+.welcomelink:active {
+color:#ffffff;
+text-decoration:none;
+} 
+/*头部欢迎盒子*/
+.headWelcome{
+	width: auto;
+	height: 30px;	
+	/*上下居中*/
+	margin: 14px auto;
+	padding: 0px 4px 0px 4px;
+	/*background-color: #09950e;*/
+	color: #cccccc;
+	font-size: 15px;
+	padding: px;
+	text-align: center;
+}
+/*头部搜索盒子*/
+.headSearch{
+	width: 350px;
+	height: 50px;
+	
+	/*background-color: #c478ce;*/
+}
+/*搜索框*/
+.serchInput{
+	width: 200px;
+	height: 25px;	
+	color: #cccccc;
+	margin: 10px 2px 0px 2px;
+	border-color: rgba(255, 255, 255, 0.945);
+	background-color: rgba(255, 255, 255, 0);;
+	padding-left: 10px;
+	font-size: 15px;
+}
+/*搜索按钮盒子*/
+.serchButtonBox{
+	width: 300px;
+	height: 50px;
+	/*
+	background-color: #00aaff;*/
+}
+	
+	/*注册登录按钮在的盒子*/
+	.loginButtonBox{
+			width: 280px;
+			height: 50px;
+			/*background-color: #ffff7f;*/
+	}
+/*首页注册登录按钮*/
+.buttonRegist{
+	border-radius: 5px;/*圆角*/
+	width: 60px;
+	height: 30px;
+	background-color: #002323;
+	color: #cccccc;
+	margin: 10px 8px 2px 0px;/*外边距：上，右，下，左*/
+	font-size: 12px;
+}
+/*登录按钮悬浮*/
+.buttonRegist:hover{
+	color: #cccccc;
+	background-color: #616161;
+	color: rgb(224, 224, 224);
+}
+/*购物车*/
+.buyCarButton{
+	border-radius: 5px;/*圆角*/
+	width: 70px;
+	height: 30px;
+	background-color: #002323;
+	color: #cccccc;
+	margin: 10px 15px 2px 5px;/*外边距：上，右，下，左*/
+	font-size: 12px;
+}
+.buyCarButton:hover{
+	color: #cccccc;
+	background-color: #616161;
+	color: rgb(224, 224, 224);
+}
+
+
+
+
+
+
+
+
+/*用户登录*/
+/*用户注册*/
+.loginBoxUI{
+	background-color: rgb(255, 255, 255);
+	width: 350px;
+	height: 280px;
+	margin: 10px auto;
+	font-display: ;
+	/*外边距,水平居中*/
+}
+
+/*登录注册上方*/
+.loginBoxUp{
+	min-width: 350px;
+	min-height: 45px;
+	background-color: teal;
+	float: left;
+	/*浮动，盒子间关系*/
+	margin: 0px 0px 6px 0px;
+	/*字体控制*/
+	color: white;
+	text-align: center;
+	/*水平居中*/
+	line-height: 45px;
+	/*垂直居中*/
+	font-size: 15px;
+	/*字体大小*/
+}
+/*弹窗点击登录按钮*/
+.work-button-login{
+	border-radius: 5px;/*圆角*/
+	width: 80px;
+	height: 30px;
+	background-color: #006666;
+	color: #cccccc;
+	margin: 8px 7px 2px 5px;/*外边距：上，右，下，左*/
+	font-size: 12px;
+}
+.work-button-login:hover{
+	color: #cccccc;
+	background-color: #007d7d;
+	color: rgb(224, 224, 224);
+}
+
+/*图标属性*/
+#icon-ui {
+	/*此处定义的font-size不起作用
+    font-size: 30px;*/
+    color:#526664;
+    /*background-color: khaki;*/
+    width: 30px;
+    height: 40px;
+    float:left;/*浮动，盒子间关系，*/
+    margin: 5px 3px 0px 5px;/*外边距：上，右，下，左*/
+}
+/*输入框盒子*/
+.loginInputBox{
+	width: 320px;
+	 height: 52px;
+	/*background-color: rgb(118, 194, 194);*/
+	 float: left;/*浮动，盒子间关系，不加会被上方的loginUpBox覆盖掉*/
+	 margin: 4px 0px 0px 16px;/*外边距：上，右，下，左*/
+}
+/*输入框*/
+.ui-input-long {
+	width: 240px;
+	height: 45px;
+	font-size: 15px;
+	border-radius: 1px;
+	float: left;
+	padding: 0px 10px 0px 15px;
+	/*上、右、下、左内边距*/
+	margin: 2px 2px 0px 5px;
+	/*外边距：上，右，下，左*/
+}
+/*验证码盒子*/
+.checkCodeBox{
+    width: 120px;
+    height: 52px;
+    float:left;/*浮动，盒子间关系，*/
+    margin: 11px 0px 0px 10px;/*外边距：上，右，下，左*/
+}
+/*提交按钮*/
+.work-button-post {
+	border-radius: 5px;
+	/*圆角*/
+	width: 200px;
+	height: 35px;
+	float: left;
+	/*浮动，盒子间关系*/
+	background-color: teal;
+	color: rgb(224, 224, 224);
+	margin: 7px 2px 0px 42px;
+	/*外边距：上，右，下，左*/
+	font-size: 20px;
+}
+
+.work-button-post:hover {
+	background-color: rgb(0, 102, 102);
+	color: rgb(224, 224, 224);
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script>
+			function print(){
+            var a = myform.name.value;
+            alert(a);
+            //document.getElementsByName("span")[0].innerHTML = a;
+			}
+		</script>
+	</head>
+	<body>
+		<form name="myform">
+			<input type="text" name="name" id="nn">
+			<input type="button" name="button" value="测试" onclick="print()">
+			<span name="span"></span>
+		</form>
+	</body>
+</html>

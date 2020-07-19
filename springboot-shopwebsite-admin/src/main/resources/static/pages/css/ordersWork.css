@@ -1,0 +1,188 @@
+@charset "utf-8";
+/*...*/
+
+/*外框*/
+.backBox {
+	background-color: rgb(235, 235, 235);
+	width: 700px;
+	min-height: 310px;
+	height: auto;
+	margin: 50px auto;
+	/*外边距，上50px，水平居中*/
+	border-radius: 8px;
+	/*圆角*/
+}
+
+/*外框上标题框*/
+.backUpBox {
+	width: 100%;
+	height: 70px;
+	background-color: teal;
+	float: left;
+	/*浮动，盒子间关系*/
+	border-radius: 10px 10px 0px 0px;
+	/*左上，右上，左下，右下*/
+	/*字体控制*/
+	color: white;
+	text-align: center;
+	/*水平居中*/
+	line-height: 70px;
+	/*垂直居中*/
+	font-size: 25px;
+	/*字体大小*/
+}
+/*上标题框内标题框*/
+.titleUpBox{
+	width: 460px;
+	height: 70px;
+	/*background-color: rgb(170, 255, 255);*/
+	float: left;
+	/*浮动，盒子间关系*/
+	border-radius: 10px 0px 0px 0px;
+	/*左上，右上，左下，右下*/
+	/*字体控制*/
+	color: white;
+	text-align: center;
+	/*水平居中*/
+	line-height: 70px;
+	/*垂直居中*/
+	font-size: 25px;
+	/*字体大小*/
+	margin: 0px 0px 0px 0px;
+}
+/*上标题框内按钮框*/
+.buttonUpBox {
+	width: 220px;
+	height: 70px;
+	/*background-color: rgb(54, 162, 162);*/
+	float: left;
+	/*浮动，盒子间关系*/
+	border-radius: 0px 10px 0px 0px;
+	/*左上，右上，左下，右下*/
+	/*字体控制*/
+	color: white;
+	text-align: center;
+	/*水平居中*/
+	line-height: 70px;
+	/*垂直居中*/
+	font-size: 25px;
+	/*字体大小*/
+	margin: 0px 0px 0px 10px;
+}
+.work-button {
+	border-radius: 5px;
+	/*圆角*/
+	width: 100px;
+	height: 45px;
+	float: left;
+	/*浮动，盒子间关系*/
+	background-color: teal;
+	color: rgb(224, 224, 224);
+	margin: 13px 2px 0px 3px;
+	/*外边距：上，右，下，左*/
+	font-size: 20px;
+}
+
+.work-button:hover {
+	background-color: rgb(0, 102, 102);
+	color: rgb(224, 224, 224);
+}
+
+/*订单表格所在盒子*/
+.backordersBox {
+	width: 700px;
+	height: auto;
+	min-height: 170px;
+	background-color: rgb(235, 235, 235);
+	float: left;
+	/*浮动，盒子间关系*/
+	border-radius: 0px 0px 10px 10px;
+	/*圆角，左上，右上，左下，右下*/
+	margin: 5px 0px 0px 0px;
+	/*外边距，*/
+	/*字体控制
+	color: rgb(36, 36, 36);
+	text-align: center;*/
+	/*水平居中
+	line-height: 140px;*/
+	/*垂直居中
+	font-size: 25px;*/
+	/*字体大小*/
+}
+/*订单表格css下*/
+table.hovertable {
+	font-family: verdana, arial, sans-serif;
+	text-align: center;
+	width: 700px;
+	/* 只有定义了表格的布局算法为fixed，下面td的定义才能起作用。 */
+	table-layout: fixed;
+	/*表格整体宽度*/
+	font-size: 15px;
+	color: #333333;
+	border-width: 1px;
+	border-color: #6b6b6b;
+	border-collapse: collapse;
+	/*单个表格的布局为无间距*/
+}
+
+table.hovertable th {
+	/*超出部分隐藏*/
+	overflow: hidden;
+	/* 强制在同一行内显示所有文本，直到文本结束或者遭遇 br 对象。不换行 */
+	word-break: keep-all;
+	/* 内容超出宽度时隐藏超出部分的内容 */
+	white-space: nowrap;
+	/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+	text-overflow: ellipsis;
+	/**/
+	background-color: #afd8e0;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #67797a;
+}
+
+table.hovertable tr {
+	/*表格整体宽度*/
+	background-color: #d4e3e5;
+}
+
+table.hovertable td {
+	/*超出部分隐藏*/
+	overflow: hidden;
+	/* 强制在同一行内显示所有文本，直到文本结束或者遭遇 br 对象。不换行 */
+	word-break: keep-all;
+	/* 内容超出宽度时隐藏超出部分的内容 */
+	white-space: nowrap;
+	/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+	text-overflow: ellipsis;
+	border-width: 1px;
+	/*表格边框*/
+	padding: 3px 2px 2px 3px;
+	/*内边距*/
+	border-style: solid;
+	/*表格边框*/
+	border-color: #67797a;
+	/*表格边框*/
+}
+/*
+订单表格按钮
+*/
+/*按钮*/
+.work-button-orderstable {
+	width: 48px;
+	height: 40px;
+	float: left;
+	/*浮动，盒子间关系*/
+	background-color: teal;
+	color: rgb(235, 235, 235);
+	margin: 0px 1px 0px 8px;
+	/*外边距：上，右，下，左*/
+	font-size: 16px;
+}
+
+.work-button-orderstable:hover {
+	background-color: rgb(0, 103, 103);
+	color: rgb(245, 245, 245);
+}
+/*订单表格css上*/

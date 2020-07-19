@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--title图标-->
+		<link rel="icon" href="image/SW-title.ico" type="image/x-icon">
+		<!--layui主要用到input前的图标-->
+		<link rel="stylesheet" href="../layui/css/layui.css">
+		<link rel="stylesheet" href="css/index.css">
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../layer/layer.js"></script>
+		<script src="js/index.js"></script>
+		<title>Shop Website泡面商城</title>
+	</head>
+	<body>
+		<div class="indexHead">
+			<div class="headWelcome" style="float: left;">
+				<a href="index.html" class="welcomelink">Welcome to SW 商城，XXXX</a>
+			</div>
+			<div class="headSearch" style="float: center;">
+				<button style="float: right;" class="buttonRegist">搜索</button>
+				<div class="serchButtonBox">
+					<input style="float: right;" class="serchInput" placeholder="输入商品名搜索" />
+				</div>
+			</div>
+			<div class="loginButtonBox" style="float: right;">
+				<button class="buttonRegist" style="float: right;" onclick="loginBoxOpen()">登录</button>
+				<button class="buttonRegist" style="float: right;" onclick="registBoxOpen()">注册</button>
+				<button class="buttonRegist" style="float: right;" onclick="">订单</button>
+				<div>
+					<button class="buyCarButton" style="float: right;" onclick="buyCarOpen()">购物车</button>
+				</div>
+			</div>
+		</div>
+		<!--页面中部-->
+		<div class="indexMain">
+			<!--购物车弹窗-->
+			<div id="buyCarBoxId" class="buyCarBox">
+				<div id="" class="buyCarBoxTitleBox">
+					<div class="buyCarBoxTitleNameBox"><p>XXX的购物车</p></div>
+					<div class="buyCarBoxTitleButtonBox">
+						<button class="buyCarBoxTitleButton">全部结算</button>
+						<button class="buyCarBoxTitleButton">全部清空</button>
+					</div>
+					
+				</div>
+				<div>
+					<table id="ordersTable" class="hovertable">
+						<tr>
+							<th width="60">编号</th>
+							<th width="60">商品号</th>
+							<th width="210">商品名</th>
+							<th width="60">商品价格</th>
+							<th width="210">操作</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2020070501</td>
+							<td>今麦郎方便面一袋半酸菜葱香红烧牛肉香辣16袋装整箱速食泡面包邮</td>
+							<td>22元</td>
+							<td>
+								<button>图片</button>
+								<button>支付</button>
+								<button>删除</button>
+								<button>结算</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!--页面底部-->
+		<div class="indexFoot">
+			<div class="footWord">
+				<p style="color: #cccccc;"><a href="adminLogin.html" class="welcomelink">后台管理</a>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Copyright&nbsp;©&nbsp;2020&nbsp;&nbsp;<a href="index.html" class="welcomelink">泡面网
+					</a>&nbsp;All&nbsp;Rights&nbsp;Reserved.</p>
+			</div>
+		</div>
+		<!--弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗弹窗-->
+		<!--注册弹窗-->
+		<div id="userRegistBox" class="loginBoxUI">
+			<div class="loginBoxUp">
+				用户注册<button class="work-button-login" onclick="loginBoxOpen()" style="float: right;">点击登录</button>
+			</div>
+			<div class="loginInputBox">
+				<div id="icon-ui">
+					<i class="layui-icon layui-icon-username" style="font-size: 35px"></i>
+				</div>
+				<input name="addUserName" class="ui-input-long" type="text" placeholder="请输入用户名">
+
+			</div>
+			<div class="loginInputBox">
+				<div id="icon-ui">
+					<i class="layui-icon layui-icon-password" style="font-size: 35px"></i>
+				</div>
+				<input name="addUserPassWord" class="ui-input-long" type="password" placeholder="请输入用户密码">
+
+			</div>
+			<div class="loginInputBox">
+				<div id="icon-ui">
+					<i class="layui-icon layui-icon-vercode" style="font-size: 35px"></i>
+				</div>
+				<div>
+					<input name="addUserCheckCode" style="width: 30%;" class="ui-input-long" type="text" placeholder="请输入验证码">
+				</div>
+				<div class="checkCodeBox">
+					<canvas id="canvas" width=100% height=30px></canvas>
+				</div>
+			</div>
+			<div class="loginInputBox">
+				<!--提交按钮写在form里会导致点击后弹出窗口结束-->
+				<button class="work-button-post" onclick="userRegistPost()">提交</button>
+			</div>
+		</div>
+
+		<!--登录弹窗-->
+		<div id="userLoginBox" class="loginBoxUI">
+			<div class="loginBoxUp">
+				用户登录<button class="work-button-login" onclick="registBoxOpen()" style="float: right;">点击注册</button>
+			</div>
+			<div class="loginInputBox">
+				<div id="icon-ui">
+					<i class="layui-icon layui-icon-username" style="font-size: 35px"></i>
+				</div>
+				<input name="checkUserName" class="ui-input-long" type="text" placeholder="请输入用户名">
+			</div>
+			<div class="loginInputBox">
+				<div id="icon-ui">
+					<i class="layui-icon layui-icon-password" style="font-size: 35px"></i>
+				</div>
+				<input name="checkUserPassWord" class="ui-input-long" type="password" placeholder="请输入用户密码">
+
+			</div>
+			<div class="loginInputBox">
+				<div id="icon-ui">
+					<i class="layui-icon layui-icon-vercode" style="font-size: 35px"></i>
+				</div>
+				<div>
+					<input name="checkUserCheckCode" style="width: 30%;" class="ui-input-long" type="text" placeholder="请输入验证码">
+				</div>
+				<div class="checkCodeBox">
+					<canvas id="canvas1" width=100% height=50px></canvas>
+				</div>
+			</div>
+			<div class="loginInputBox">
+				<!--提交按钮写在form里会导致点击后弹出窗口结束-->
+				<button class="work-button-post" onclick="userLoginPost()">提交</button>
+			</div>
+		</div>
+
+		<!--购物车弹窗要写在这里来-->
+		<!---->
+		<!---->
+		<!---->
+		<!---->
+		<!---->
+	</body>
+</html>

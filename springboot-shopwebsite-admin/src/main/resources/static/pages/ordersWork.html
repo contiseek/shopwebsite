@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>ShopWebsite - 订单管理</title>
+		<!--title图标-->
+		<link rel="icon" href="image/SW-title.ico" type="image/x-icon">
+		<link href="css/ordersWork.css" rel="stylesheet" />
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../layer/layer.js"></script>
+		<script src="js/ordersWork.js"></script>
+	</head>
+	<body>
+		<div class="backBox">
+			<div class="backUpBox">
+				<div class="titleUpBox">
+					ShopWebsite - 订单管理
+				</div>
+				<div class="buttonUpBox">
+					<button class="work-button" onclick="ordersRefresh()">订单刷新</button>
+					<button class="work-button" onclick="goodsWork()">商品管理</button>
+				</div>
+			</div>
+			<div class="backordersBox">
+				<table id="ordersTable" class="hovertable">
+					<tr>
+						<th width="70">订单编号</th>
+						<th width="70">用户编号</th>
+						<th width="70">商品编号</th>
+						<th width="100">下单时间</th>
+						<th width="140">订单状态</th>
+						<th width="100">订单操作</th>
+					</tr>
+				</table>
+			</div>
+		</div>		
+	</body>
+</html>
